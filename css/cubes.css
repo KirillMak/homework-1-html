@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir_Next.ttf"); }
+html, body {
+  height: 100%; }
+
+body {
+  background: url("../img/background-cubes.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-family: Avenir;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase; }
+
+.widget {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-self: center;
+  flex-direction: column; }
+  .widget .widget__row {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .widget .widget__row .widget__item {
+      margin: 0;
+      width: 33.3333333333%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap; }
+    .widget .widget__row figure img {
+      margin-bottom: 30px; }
+    .widget .widget__row figure figcaption {
+      margin-bottom: 35px; }
+
+#item1 {
+  background-color: #06b3db; }
+
+#item2 {
+  background-color: #4ed486; }
+
+#item3 {
+  background-color: #6139f6; }
+
+#item4 {
+  background-color: #e3b63d; }
+
+#item5 {
+  display: flex;
+  align-items: stretch; }
+  #item5 header {
+    height: 50%;
+    background-color: #dc3d66;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #item5 main {
+    height: 50%;
+    background-color: #b73356; }
+    #item5 main ul {
+      display: flex;
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+    #item5 main ul li {
+      margin: 0;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+    #item5 main ul li img {
+      width: 50%; }
+
+#item6 {
+  background-color: #bd54cd; }
+
+/*# sourceMappingURL=cubes.css.map */

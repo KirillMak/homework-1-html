@@ -1,0 +1,127 @@
+
+$purple: #6139f6;
+$light-green:#4ed486;
+$light-blue:#06b3db;
+$light-orange:#e3b63d;
+$lilac: #bd54cd;
+$light-red:#dc3d66;
+$crimson: #b73356;
+
+
+@font-face {
+    font-family:Avenir;
+    src:url("../fonts/Avenir_Next.ttf");
+}
+html,body {
+    height:100%;
+}
+body {
+    background: url("../img/background-cubes.jpg") no-repeat;
+    background-size:cover;
+    
+    display:flex;
+    justify-content: center;
+
+    font-family: Avenir;
+    font-size: 0.8em;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color:white;
+    text-transform: uppercase;
+}
+.widget {
+    width:600px;
+    height:400px;
+    display: flex;
+    align-self: center;
+    //justify-self: center;
+    flex-direction: column;
+
+    .widget__row {
+        height: 200px / 400px * 100%;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+
+
+        .widget__item {
+            margin:0;
+            width: 200px / 600px * 100%;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap:wrap;
+        }
+        figure {
+            //flex-direction: column;
+            
+            img{
+                margin-bottom:30px;
+            }
+            figcaption{
+                margin-bottom:35px;
+            }
+        }
+    }
+}
+
+#item1{
+    background-color: $light-blue;
+}
+#item2{
+    background-color: $light-green;
+}
+#item3 {
+    background-color: $purple;
+}
+#item4 {
+    background-color: $light-orange;
+}
+
+
+#item5 {
+
+    display:flex;
+    align-items: stretch;
+
+    header {
+        height:50%;
+        background-color: $light-red;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     main {
+        height:50%;
+        background-color: $crimson;
+
+        ul {
+            display:flex;
+            height:100%;
+            margin:0;
+            padding:0;
+            //align-items: stretch;
+            //justify-content: stretch;
+        }
+        ul li {
+            margin:0;
+            width:25%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        ul li img{
+            width:50%;
+        }
+    }
+}
+#item6 {
+    background-color: $lilac;
+}
+
+
+
